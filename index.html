@@ -1,113 +1,75 @@
 <!DOCTYPE html>
-<html lang=”EN”>
+<html lang="EN">
 	<head>
 		<title>
-		 	Título de la página
+		 	Menu restaurant
 		</title>
-		<meta charset=”UTF-8”>
-		<!-- CSS: referencia -- >
+		<meta charset="UTF-8">
 	</head>
 	<body>
 		<section>
-		<ul>
-			<li>
-				<a href="_">
-				Home
-				</a>
-			</li>
-			<li>
-				About
-			</li>
-			<li>
-				Reviews
-			</li>
-		</ul>
+      <ul>
+        <li>
+          <a href="_">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="_">
+            About
+          </a>
+        </li>
+        <li>
+          <a href="_">
+             Reviews
+          </a>
+        </li>
+      </ul>
 		</section>
-		<section
-		<h2>
-			Welcome to our menu!
-		</h2>
-		<table>
-			<thead>
-			       <tr>
-				<th>
-				   Food
-				</th>
-			       </tr>
-			       <tr>
-				<th>
-				   Description
-				</th>
-			       </tr>
-			       <tr>
-				<th>
-				   Price
-				</th>
-			       </tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>
-					   Salad
-					</td>
-					<td>
-					   Burger
-					</td>
-					<td>
-					   Chicken Salad
-					</td>
-					<td>
-					   Buffalo Chicken
-					</td>
-					<td>
-					   Fires
-					</td>
-					<td>
-					   Soda
-					</td>
-				</tr>
-				<tr>
-					<td>
-					   Fresh deliciouse Cobb Salad
-					</td>
-					<td>
-					   1/4lb grass fed burger
-					</td>
-					<td>
-					   Our world famous
-					</td>
-					<td>
-					   Spicy fried chicken on a brioche bun 
-					</td>
-					<td>
-					   Hand cut potatoes lightly fried and seasoned
-					</td>
-					<td>
-					   Regular,diet, orange or root beer
-					</td>
-			       </tr>
-			       <tr>
-					<td>
-					   $7.99
-					</td>
-					<td>
-					   $6.99
-					</td>
-					<td>
-					   $8.99
-					</td>
-					<td>
-					   $10.99
-					</td>
-					<td>
-					   $1.99
-					</td>
-					<td>
-					   $1.00
-					</td>
-			       </tr>
-			</tbody>
-		</table>
+    This is a sidebar!
+		<section>
+      <h2>Welcome to our menu!</h2>
+      <table>
+        <thead>
+          <tr>
+              <th>Food</th>
+              <th>Description</th>
+              <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Salad</td>
+            <td>Fresh, deliciouse Cobb Salad</td>
+            <td>$7.99</td>
+          </tr>
+          <tr>
+            <td>Burger</td>
+            <td> 1/4lb grass-fed burger with choice of cheese</td>
+            <td>$6.99</td>
+          </tr>
+          <tr>
+            <td>Chicken Salad Sandwich</td>
+            <td>Our world famous chicken salad on a bagel with homemade pickels</td>
+            <td>$8.99</td>
+          </tr>
+          <tr>
+            <td>Buffalo Chicken Sandwich</td>
+            <td>Spicy fried chicken on a brioche bun </td>
+            <td>$10.99</td>
+          </tr>
+          <tr>
+            <td>Fires</td>
+            <td>Hand cut potatoes lightly fried and seasoned</td>
+            <td>$1.99</td>
+          </tr>
+          <tr>
+            <td>Soda</td>
+            <td>Regular,diet, orange or root beer</td>
+            <td>$1.00</td>
+          </tr>
+        </tbody>
+      </table>
 		</section>
 		<section>
 			<form>
@@ -115,42 +77,63 @@
 					<legend>
 					Leave us a comment
 					</legend>
-					<p>
 						<label>
-							First name: 
-								<input type=”text” id=”fname” name="fname" />
+							First name : 
+								<input type="text" id="fname" name="fname" />
 						</label>
+          <br>
 						<label>
-							Last name: 
-								<input type=”text” id=”lname” name="lname" />
+							Last name : 
+								<input type="text" id="lname" name="lname" />
 						</label>
+          <br>
 						<label>
-							Email: 
-								<input type=”email” id=”email” name="email" />
+							Email : 
+								<input type="email" id="email" name="email" />
 						</label>
+          <br>
 						<label>
-							Phone number: 
-								<input type=”tel” id="phone" name="phone" />
+							Phone number : 
+								<input type="tel" id="phone" name="phone" />
 						</label>
+          <br>
 						<label>
-							Rate us: 
-								<select id=”rate” name="rate">
+							Rate us : <br>
+								<select id="rate" name="rate">
 									<option value="vg">
 										Very good
 									</option>
+                  <option value="g">
+										Good
+									</option>
+                  <option value="b">
+										Bad
+									</option>
+                  <option value="vb">
+										Very bad
+									</option>
 								</select>
 						</label>
+          <br>
+						Your comment : <br> 
+							<textarea name= "comentario">
+
+              </textarea>
+          <br>
 						<label>
-							Your comment: 
-								<input type=”text” id=”fname” name="fname" />
+							Would you visit us again? <br>
+							Yes:<input type="radio" id="yes" name="visit"/> 
 						</label>
-						<label>
-							Will you visit us again: 
-								<input type=”text” id=”fname” name="fname" />
+            <label>
+              <br>
+              No:  <input type="radio" id="no" name="visit"/>
 						</label>
-					</p>
+            <br><input type="submit" value="Submit">
 				</fieldset>
 			</form>
 		</section>
+    <footer>
+      This is where any content in the footer would go
+    </footer>
 	</body>
 </html>
