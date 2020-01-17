@@ -1,139 +1,101 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="EN">
-	<head>
-		<title>
-		 	Menu restaurant
-		</title>
-		<meta charset="UTF-8">
-	</head>
-	<body>
-		<section>
-      <ul>
-        <li>
-          <a href="_">
-            Home
-          </a>
-        </li>
-        <li>
-          <a href="_">
-            About
-          </a>
-        </li>
-        <li>
-          <a href="_">
-             Reviews
-          </a>
-        </li>
-      </ul>
-		</section>
-    This is a sidebar!
-		<section>
-      <h2>Welcome to our menu!</h2>
-      <table>
-        <thead>
-          <tr>
-              <th>Food</th>
-              <th>Description</th>
-              <th>Price</th>
-            </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Salad</td>
-            <td>Fresh, deliciouse Cobb Salad</td>
-            <td>$7.99</td>
-          </tr>
-          <tr>
-            <td>Burger</td>
-            <td> 1/4lb grass-fed burger with choice of cheese</td>
-            <td>$6.99</td>
-          </tr>
-          <tr>
-            <td>Chicken Salad Sandwich</td>
-            <td>Our world famous chicken salad on a bagel with homemade pickels</td>
-            <td>$8.99</td>
-          </tr>
-          <tr>
-            <td>Buffalo Chicken Sandwich</td>
-            <td>Spicy fried chicken on a brioche bun </td>
-            <td>$10.99</td>
-          </tr>
-          <tr>
-            <td>Fires</td>
-            <td>Hand cut potatoes lightly fried and seasoned</td>
-            <td>$1.99</td>
-          </tr>
-          <tr>
-            <td>Soda</td>
-            <td>Regular,diet, orange or root beer</td>
-            <td>$1.00</td>
-          </tr>
-        </tbody>
-      </table>
-		</section>
-		<section>
-			<form>
-				<fieldset>
-					<legend>
-					Leave us a comment
-					</legend>
-						<label>
-							First name : 
-								<input type="text" id="fname" name="fname" />
-						</label>
-					          <br>
-						<label>
-							Last name : 
-								<input type="text" id="lname" name="lname" />
-						</label>
-					          <br>
-						<label>
-							Email : 
-								<input type="email" id="email" name="email" />
-						</label>
-					          <br>
-						<label>
-							Phone number : 
-								<input type="tel" id="phone" name="phone" />
-						</label>
-					          <br>
-						<label>
-							Rate us : <br>
-								<select id="rate" name="rate">
-									<option value="vg">
-										Very good
-									</option>
-                  								<option value="g">
-										Good
-									</option>
-								                  <option value="b">
-										Bad
-									</option>
-								                  <option value="vb">
-										Very bad
-									</option>
-								</select>
-						</label>
-         					<br>
-						Your comment : <br> 
-						<textarea name= "comentario">
+<head>
+	<link href ="CSS/index.css" rel="stylesheet" type="text/css"/>
+	<title>Menu restaurant</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="nav">
+                <li><a href="_">Home</a></li>
+                <li><a href="_">About</a></li>
+                <li><a href="_">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+	<p>This is the sidebar!</p>
+	<h2>Welcome to our menu!</h2>
+	<section>
+      	<table>
+		    <thead>
+		        <tr>
+		            <th>Food</th>
+		            <th>Description</th>
+		            <th>Price</th>
+                </tr>            
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Salad</td>
+                    <td>Fresh, delicious Cobb Salad</td>
+                    <td>$7.99</td>
+                </tr>
+                <tr>
+                    <td>Burger</td>
+                    <td> 1/4 lb grass-fed burger with choice of cheese</td>
+                    <td>$6.99</td>
+                </tr>
+                <tr>
+                    <td>Chicken Salad Sandwich</td>
+                    <td>Our world famous chicken salad on a bagel with homemade pickles</td>
+                    <td>$8.99</td>
+                </tr>
+                <tr>
+                    <td>Buffalo Chicken Sandwich</td>
+                    <td>Spicy fried chicken on a brioche bun </td>
+                    <td>$10.99</td>
+                </tr>
+                <tr>
+                    <td>Fires</td>
+                    <td>Hand cut potatoes lightly fried and seasoned</td>
+                    <td>$1.99</td>
+                </tr>
+                <tr>
+                    <td>Soda</td>
+                    <td>Regular, diet, orange or root beer</td>
+                    <td>$1.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <form id="commentForm">
+        <fieldset>
+            <legend>Leave us a comment</legend>
+            <span>Span text</span>
+            <p class="error" id="eFN" name="eFN">Enter Firstname</p>
+            <label>First name : <input type="text" id="fname" name="fname" class="formElement" /></label>
+            <p class="error" id="eLN" name="eLN">Enter Lastname</p>
+            <label>Last name : <input type="text" id="lname" name="lname" class="formElement" /></label>
+            <p class="error" id="eEM" name="eEM">Enter an email</p>
+            <label>Email : <input type="email" id="email" name="email" class="formElement" /></label>
+            <p class="error" id="ePN" name="ePN">Enter phone number</p>
+            <label>Phone number : <input type="tel" id="phone" name="phone" class="formElement" /></label>
+            Rate us :
+            <p class="error" id="eSR" name="eSR">Select a rating</p>
+            <select id="rate" name="rate">
+                <option value="sel">Select an option</option>
+                <option value="vg">Very good</option>
+                <option value="g">Good</option>
+                <option value="ng">Not good </option>
+                <option value="b">Bad</option>
+            </select>
+            Your comment :
+            <textarea cols="50" rows="4" name="comentario">
 
-						</textarea>
-					        <br>
-						<label>
-							Would you visit us again? <br>
-							Yes:<input type="radio" id="yes" name="visit"/> 
-						</label>
-					        <label>
-				         	<br>
-					              No:  <input type="radio" id="no" name="visit"/>
-						</label>
-            					<br><input type="submit" value="Submit">
-				</fieldset>
-			</form>
-		</section>
+		    </textarea>
+            Would you visit us again?
+            <p class="error" id="eSA" name="eSA">Select an answer (y/n)</p>
+            <label>Yes: <input type="radio" id="yes" name="visit" /> </label>
+            <label>No: <input type="radio" id="no" name="visit" /></label>
+            <input type="submit" value="Submit" id="submit" class="click">
+            <input type="submit" value="Reset" id="reset" class="click">
+        </fieldset>
+    </form>
     <footer>
       This is where any content in the footer would go
     </footer>
+    <script type="text/javascript" src="./js/index.js"></script>
 	</body>
 </html>

@@ -1,0 +1,132 @@
+label, select, textarea {
+    display: block;
+    padding: 3px 0;
+}
+body {
+font-family: Verdana, sans-serif;
+font-size: 13px;
+color :  #4F545F;
+margin: 0;
+padding: 10px;
+}
+
+h2{
+background-color: #55b3c5;
+margin:0;
+padding: 20px;
+color:white;
+}
+
+fieldset{
+margin: 20px;
+padding:20px;
+border: 2px dashed #DDDDDD;
+}
+
+legend{
+    font-size: 16px;
+    font-weight:bold;
+}
+
+fieldset > span {
+    color: #6278b0;
+    padding: 20px 40px;
+    display: block;
+    background: url('./../img/menu.png') no-repeat center left #CCE9F8;
+    background-size: 40px 40px;
+    border: 1px solid #6278b0;
+    margin-bottom: 10px;
+}
+
+.formElement {
+    padding: 5px 10px;
+    width: 300px;
+}
+
+select[name=rate]{
+    font-size:14px;
+    width: 250px;
+    margin-bottom: 6px;
+}
+
+#submit,#reset{
+    padding:10px 20px;
+    font-size: 16px;
+    border: 0;
+    color:white; 
+    border-radius: 5px;
+    margin-top:6px;
+    text-align:center;
+}
+
+#submit {
+    background-color: green;
+}
+
+#reset {
+    background-color:red;
+}
+
+.click:hover{
+    cursor:pointer;
+    opacity:0.7;
+}
+
+#submit:hover{
+    background-color:blue;
+}
+
+table{
+    border: 1px solid #eee;
+    margin: 10px auto;
+    border-collapse:collapse;
+}
+
+th, td {
+    border: 1px solid #eee;
+    padding: 8px 25px;
+}
+
+td{
+    color: #999;
+}
+
+tr:hover{
+    color: #555;
+    background-color:#f4f4f4;
+}
+
+th {
+    color: white;
+    background-color: #55B3c5;
+    text-transform : uppercase;
+}
+
+ul{
+    background-color: #ccc;
+    list-style:none;
+    overflow:auto;
+}
+
+li{
+    float: left;
+    padding: 20px;
+}
+
+li>a{
+    text-decoration: none;
+    color: #4F545F;
+}
+li:hover{
+    background-color:antiquewhite;
+}
+li>a:hover{
+    color: lightseagreen;
+}
+
+.error{
+    display:none;
+    color:red;
+    margin:0;
+    padding:0;
+}
